@@ -6,6 +6,7 @@ const sodInstall = { url: "/images/landback.jpg" };
 const mulchGarden = { url: "/images/landhome.jpg" };
 const mulchCommercial = { url: "/images/landback2.jpg" };
 const rockCurbing = { url: "/images/landrock.jpg" };
+const mulchFrontYard = { url: "/images/landmulch1.JPG" };
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -30,11 +31,30 @@ export const Route = createFileRoute("/")({
 });
 
 const gallery = [
-  { src: sodInstall.url, caption: "Established lawn after install" },
-  { src: lawn.url, caption: "Commercial mulch & bed shaping" },
-  { src: mulchGarden.url, caption: "Garden bed mulch refresh" },
-  { src: mulchCommercial.url, caption: "Fresh sod installation in progress" },
-  { src: rockCurbing.url, caption: "Decorative rock with curbing" },
+  {
+    src: sodInstall.url,
+    caption: "Established lawn after install",
+  },
+  {
+    src: lawn.url,
+    caption: "Commercial mulch & bed shaping",
+  },
+  {
+    src: mulchGarden.url,
+    caption: "Garden bed mulch refresh",
+  },
+  {
+    src: mulchCommercial.url,
+    caption: "Fresh sod installation in progress",
+  },
+  {
+    src: rockCurbing.url,
+    caption: "Decorative rock with curbing",
+  },
+  {
+    src: mulchFrontYard.url,
+    caption: "Fresh mulch installation with professionally maintained landscape beds.",
+  },
 ];
 
 const services = [
@@ -99,7 +119,7 @@ function Index() {
           <div className="mt-6 flex gap-3">
             <a
               href="#contact"
-              className="rounded-md bg-stone-800 px-4 py-2 text-sm font-medium text-white hover:bg-stone-900"
+              className="rounded-md bg-green-900 px-4 py-2 text-sm font-medium text-white hover:bg-green-950"
             >
               Get a quote
             </a>
@@ -215,7 +235,7 @@ function Index() {
           best.
         </p>
         <p className="mt-3 max-w-3xl text-sm text-stone-500">
-          Currently servicing West Edmonton as of 2026.
+          Proudly serving West Edmonton and surrounding communities!
         </p>
       </section>
 
@@ -225,23 +245,57 @@ function Index() {
           <p className="mt-2 max-w-2xl text-stone-600">
             Reach out for a free estimate on your next project.
           </p>
-          <div className="mt-6 grid gap-4 sm:grid-cols-3">
-            <div className="rounded-lg border border-stone-200 p-5">
-              <div className="text-xs uppercase tracking-wide text-stone-500">Service area</div>
-              <div className="mt-1 font-medium text-stone-900">West Edmonton, AB</div>
-            </div>
-            <div className="rounded-lg border border-stone-200 p-5">
-              <div className="text-xs uppercase tracking-wide text-stone-500">Instagram</div>
-              <a
-                href="https://instagram.com/darrenslandscape"
-                target="_blank"
-                rel="noreferrer"
-                className="mt-1 inline-block font-medium text-stone-900 hover:underline"
-              >
-                @darrenslandscape
-              </a>
-            </div>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="rounded-lg border border-stone-200 p-5">
+            <div className="text-xs uppercase tracking-wide text-stone-500">Instagram</div>
+            <a
+              href="https://instagram.com/darrenslandscape"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-1 inline-block font-medium text-stone-900 hover:underline"
+            >
+              @darrenslandscape
+            </a>
           </div>
+
+        <div className="rounded-lg border border-stone-200 p-5">
+          <div className="text-xs uppercase tracking-wide text-stone-500">
+            Phone
+          </div>
+          <a
+            href="tel:+17806952476"
+            className="mt-1 inline-block font-medium text-stone-900 hover:underline"
+          >
+            780-695-2476
+          </a>
+        </div>
+
+        <div className="rounded-lg border border-stone-200 p-5">
+          <div className="text-xs uppercase tracking-wide text-stone-500">
+            Email
+          </div>
+          <a
+            href="mailto:darrenslawn@gmail.com"
+            className="mt-1 inline-block break-all font-medium text-stone-900 hover:underline"
+          >
+            darrenslawn@gmail.com
+          </a>
+        </div>
+
+        <div className="rounded-lg border border-stone-200 p-5">
+          <div className="text-xs uppercase tracking-wide text-stone-500">
+            Facebook
+          </div>
+          <a
+            href="https://www.facebook.com/DarrensLawnAndLandScape/"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-1 inline-block font-medium text-stone-900 hover:underline"
+          >
+            Darren's Lawn and Landscape
+          </a>
+        </div>
+      </div>
         </div>
       </section>
 
